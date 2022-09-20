@@ -1,4 +1,4 @@
-package edu.temple.tuh24865.cis3515_pre_hw02_color_activity
+package edu.temple.tuh24865.recyclerapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
