@@ -1,7 +1,9 @@
 package edu.temple.tu24865.recyclerapp
 
+import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import edu.temple.tuh24865.recyclerapp.ColorObject
 
 class ColorAdapter (_colors: Array<ColorObject>): RecyclerView.Adapter<ColorAdapter.ColorViewHolder>(){
 
@@ -19,7 +21,7 @@ class ColorAdapter (_colors: Array<ColorObject>): RecyclerView.Adapter<ColorAdap
 
     override fun onBindViewHolder(holder: ColorViewHolder, position: Int) {
         holder.textView.text = colors[position].name
-        holder.textView.setBackgroundColor(Color.parseColor(colors[position].code))
+        holder.textView.setBackgroundColor(ColorObject.parseColor(colors[position].code))
     }
 
     override fun getItemCount(): Int {
